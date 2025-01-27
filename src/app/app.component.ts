@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MatTableModule} from '@angular/material/table';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,6 +8,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'financial-buddy-webapp';
+export class AppComponent  {
+
 }

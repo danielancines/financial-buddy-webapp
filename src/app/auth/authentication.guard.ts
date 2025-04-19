@@ -13,7 +13,6 @@ import {Injectable} from '@angular/core';
 export class AuthenticationGuard implements CanActivate {
   constructor(private authenticationService: AuthenticationService,
               private router: Router) {
-
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): MaybeAsync<GuardResult> {
@@ -25,7 +24,3 @@ export class AuthenticationGuard implements CanActivate {
     return false;
   }
 }
-
-export const authenticationGuard: CanActivateFn = (route, state) => {
-  return true;
-};
